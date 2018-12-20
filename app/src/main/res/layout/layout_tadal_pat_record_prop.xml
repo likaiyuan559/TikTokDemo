@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="90dp"
+              android:layout_height="106dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/layout_tidal_pat_record_prop_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"/>
+    <View
+        android:id="@+id/layout_tidal_pat_record_prop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_tidal_pat_prop_selected"
+        android:visibility="gone"/>
+</RelativeLayout>

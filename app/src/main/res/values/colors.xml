@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="pure_white">#FFFFFF</color>
+
+    <color name="pure_transparency_90_white">#E6FFFFFF</color>
+
+    <color name="pure_black">#000000</color>
+
+    <color name="color_f8">#F8F8F8</color>
+
+    <color name="color_f0">#F0F0F0</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#FFFF</color>
+
+    <color name="black">#F000</color>
+
+    <color name="color_f9">#FFF9F9F9</color>
+    <!-- 正在加载背景颜色值 -->
+
+
+    <color name="red">#ED4A4A</color>
+
+    <!-- 字体颜色，深黑色 -->
+
+
+    <color name="color_33">#0a1a2a</color>
+
+    <color name="color_333">#FF333333</color>
+
+    <color name="color_91">#919191</color>
+
+    <color name="color_white">#ffffff</color>
+
+    <color name="color_ba">#FFBABABA</color>
+
+    <color name="color_c6">#FFC6C6C6</color>
+
+    <!-- 字体颜色，浅色 -->
+
+
+    <color name="color_6e">#6e6e6e</color>
+    <color name="color_666">#666666</color>
+    <color name="color_68">#686868</color>
+
+    <!-- 字体颜色，浅黑色 -->
+
+
+    <color name="color_99">#999999</color>
+
+    <!--登陆注册背景色，黑色-->
+
+
+    <color name="login_bg">#05101c</color>
+
+    <color name="login_bg_edt">#121c28</color>
+
+    <color name="login_hint_high">#ccffffff</color>
+
+    <color name="login_hint">#33ffffff</color>
+    <color name="text_hint">#80ffffff</color>
+    <color name="text_hint_pink">#df3b3d</color>
+
+    <!-- 表格边框颜色 -->
+
+    <color name="color_bb">#AAAAAA</color>
+    <color name="color_b2">#B2B2B2</color>
+    <color name="color_b4">#B4B4B4</color>
+
+    <!-- 分割线颜色 -->
+
+
+    <color name="color_dd">#DDDDDD</color>
+
+    <color name="color_ee">#EEEEEE</color>
+
+    <color name="color_e7">#E7E7E7</color>
+
+    <color name="color_e8">#E8E8E8</color>
+
+    <!-- 应用整体颜色 - 底部按钮未选中字体颜色 -->
+
+
+    <!-- 应用整体颜色 - 主题颜色 -->
+
+
+    <color name="theme_color">#E0E0E0</color>
+
+    <color name="title_text_color">#333333</color>
+
+    <color name="theme_pink">#F33F40</color>
+
+    <color name="theme_pink_click">#d12728</color>
+
+    <color name="theme_green">#20CA2C</color>
+
+    <color name="theme_yellow">#FFC62E</color>
+
+    <color name="tidal_pat_yellow">#FFFACE15</color>
+
+    <color name="theme_blue">#00AEFF</color>
+
+    <color name="theme_back">#05101c</color>
+
+    <color name="theme_dark">#121C28</color>
+
+    <color name="theme_title">#FF05101C</color>
+
+    <color name="theme_dark_click">#D0121C28</color>
+
+    <color name="theme_dark_white">#999999</color>
+
+    <color name="theme_dim_white">#80ffffff</color>
+
+    <color name="theme_dim_white_new">#80ffffff</color>
+    <color name="few_60_transparency_white">#9AFFFFFF</color>
+    <color name="few_80_transparency_white">#CDFFFFFF</color>
+    <color name="few_30_transparency_white">#4DFFFFFF</color>
+    <color name="few_20_transparency_white">#33FFFFFF</color>
+    <color name="few_10_transparency_white">#1AFFFFFF</color>
+
+    <color name="theme_white">#cccccc</color>
+
+    <color name="few_transparency">#80000000</color>
+
+    <color name="few_3a_transparency">#3A000000</color>
+    <color name="few_b4_transparency">#B4000000</color>
+    <color name="few_66_transparency">#66000000</color>
+
+    <color name="transparency">#00000000</color>
+
+    <color name="theme_dark_line">#1D2732</color>
+
+    <color name="theme_dark_white_line">#999999</color>
+
+    <color name="theme_dark_tab">#82888E</color>
+
+    <color name="theme_delete">#DB3A3D</color>
+
+    <color name="concern_time_line">#ff2a333e</color>
+
+    <color name="theme_gold">#FFEBD9B0</color>
+
+    <color name="theme_gold_few_transparency">#B4EBD9B0</color>
+
+    <color name="color_orange">#FF9E51</color>
+
+    <!-- 七牛 -->
+    <color name="color_aa">#FFAAAAAA</color>
+
+    <color name="color_indicator">#FF374049</color>
+    <color name="none_color">#00000000</color>
+    <color name="white_back_line_white_color">#20ffffff</color>
+
+
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ff86f60e</color>
+    <color name="viewfinder_laser_trs">#7f86f60e</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="empty_data_text_color">#20ffffff</color>
+
+
+    <!--新版统一颜色 -->
+    <!--标题背景 -->
+    <color name="common_title_back_color">#05101c</color>
+    <!--标题tab未选中颜色 -->
+    <color name="common_dark_text_color">#999999</color>
+    <!--标题tab选中颜色 -->
+    <!-- 统一黑色字体 -->
+    <color name="common_black_text_color">#333333</color>
+    <!-- 统一黑色字体 -->
+    <color name="common_middle_black_text_color">#666666</color>
+    <!-- 统一淡灰色字体 -->
+    <color name="common_light_dark_text_color">#999999</color>
+    <!--标题tab选中颜色 -->
+    <color name="common_dark_black_text_color">#666666</color>
+    <!--输入框背景 -->
+    <color name="common_search_bg_color">#f0f0f0</color>
+    <!--灰色背景 -->
+    <color name="common_dark_back_new">#f0f0f0</color>
+
+    <color name="common_login_text_color">#99ffffff</color>
+    <color name="common_login_line_color">#33ffffff</color>
+
+    <!-- -->
+    <color name="common_item_bg_color">#0fffffff</color>
+
+    <!--分割线 -->
+    <color name="common_divide_line_303030">#303030</color>
+    <!--hint -->
+
+    <color name="bg_message_box_title_unselected_color">#666666</color>
+    <color name="bg_message_box_divider_line">#dddddd</color>
+    <color name="bg_message_box_color">#f0f0f0</color>
+    <color name="bg_upload_divider_line">#eeeeee</color>
+    <color name="bg_upload_hint_color">#999999</color>
+    <color name="login_hint_color">#999999</color>
+    <color name="transparent_30_percent">#4fffffff</color>
+    <color name="transparent_50_percent">#7f000000</color>
+
+    <color name="tag_selected_text_color">#EBD9B0</color>
+    <color name="tag_unselected_text_color">#cccccc</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_181818">#181818</color>
+    <color name="color_80181818">#80181818</color>
+
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_4Dffffff">#4Dffffff</color>
+    <color name="color_f33f40">#F33F40</color>
+    <color name="color_ffd217">#ffd217</color>
+    <color name="color_b2b2b2">#b2b2b2</color>
+    <color name="color_777777">#777777</color>
+    <color name="theme_head_new">#1C1C1C</color>
+    <color name="theme_black_new">#121212</color>
+    <color name="theme_dark_new">#242424</color>
+    <color name="theme_yellow_new">#EBD9B0</color>
+
+    <color name="common_text_color_new">#FFFFFF</color>
+    <color name="common_dark_text_color_new">#777777</color>
+    <color name="common_divide_line_color_new">#d8d8d8</color>
+    <color name="common_black_divide_line_color_new">#303030</color>
+
+    <color name="common_unable_text_color">#20FFFFFF</color>
+    <color name="gray_normal">#666667</color>
+
+
+</resources>

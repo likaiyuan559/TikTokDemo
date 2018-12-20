@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tidal_pat_speed">
+        <item>极慢</item>
+        <item>慢</item>
+        <item>标准</item>
+        <item>快</item>
+        <item>极快</item>
+    </array>
+</resources>

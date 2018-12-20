@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--首页底部tab属性 -->
+    <declare-styleable name="tabstyle">
+        <attr name="tab_src" format="reference" />
+        <attr name="tab_style_text" format="string" />
+        <attr name="tab_style_text_size" format="dimension" />
+        <attr name="tab_style_text_color" format="color" />
+        <attr name="tab_text_color" format="color" />
+        <attr name="tab_text_size" format="dimension" />
+        <attr name="tab_text" format="string" />
+        <attr name="tab_text_margin" format="dimension" />
+    </declare-styleable>
+
+    <!--含@的textview -->
+    <declare-styleable name="attextstyle">
+        <attr name="at_text_color" format="color" />
+        <attr name="at_text_color_hl" format="color" />
+        <attr name="at_text_size" format="dimension" />
+        <attr name="at_text" format="string" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PersonalShowAudioMixtureGroupLayout">
+        <attr name="SelectedCircleColor" format="color"/>
+        <attr name="CircleLineColor" format="color"/>
+        <attr name="AudioBackgroundDefaultDrawable" format="reference"/>
+        <attr name="AudioBackgroundSelectorDrawable" format="reference"/>
+        <attr name="AudioTextSelectedColor" format="color"/>
+        <attr name="AudioTextDefaultColor" format="color"/>
+        <attr name="AudioTextSize" format="integer"/>
+        <attr name="AudioCirclePadding" format="dimension"/>
+        <attr name="LayoutOrientationIsVertical" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TouchShakeView">
+        <attr name="default_img_res" format="reference"/>
+        <attr name="selected_img_res" format="reference"/>
+        <attr name="shake_scale" format="float"/>
+        <attr name="TouchShakeMode">
+            <enum name="button" value="0"/>
+            <enum name="checkBox" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SpeedLevelControllerView">
+        <attr name="SpeedLevelLineWidth" format="dimension"/>
+        <attr name="SpeedLevelLineColor" format="color"/>
+        <attr name="SpeedLevelTextColor" format="color"/>
+        <attr name="SpeedLevelTextBackgroundColor" format="color"/>
+        <attr name="SpeedLevelTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="BreakProgressView">
+        <attr name="SelectedProgressColor" format="color"/>
+        <attr name="MaxProgress" format="integer"/>
+        <attr name="SegmentationLineColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleRecordView">
+        <attr name="CircleStatusSize" format="dimension"/>
+        <attr name="CircleDynamicSize" format="dimension"/>
+        <attr name="CircleImageSize" format="dimension"/>
+        <attr name="CircleBackgroundStartColor" format="color"/>
+        <attr name="CircleBackgroundEndColor" format="color"/>
+        <attr name="CircleNotTouchStartColor" format="color"/>
+        <attr name="CircleNotTouchEndColor" format="color"/>
+        <attr name="CircleImageRes" format="reference"/>
+        <attr name="CircleAlignParentBottom" format="boolean"/>
+        <attr name="CircleMarginBottom" format="dimension"/>
+        <attr name="CircleMaxStrokeWidth" format="dimension"/>
+        <attr name="CircleMinStrokeWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CountDownTextView">
+        <attr name="CountDownTextSize" format="dimension"/>
+        <attr name="CountDownTextColor" format="color"/>
+        <attr name="CountDownText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScaleRoundRectView">
+        <attr name="ScaleRoundRectSelectedColor" format="color"/>
+        <attr name="ScaleRoundRectDefaultColor" format="color"/>
+        <attr name="ScaleRoundRectImageWidth" format="dimension"/>
+        <attr name="ScaleRoundRectImageHeight" format="dimension"/>
+        <attr name="ScaleRoundRectImageRes" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TidalPatAdjustSeekBar">
+        <attr name="TidalPatAdjustThumbSize" format="dimension" />
+        <attr name="TidalPatAdjustThumbColor" format="color" />
+        <attr name="TidalPatAdjustThumbDefaultColor" format="color" />
+        <attr name="TidalPatAdjustProgressColor" format="color" />
+        <attr name="TidalPatAdjustProgressSelectedColor" format="color" />
+        <attr name="TidalPatAdjustProgressDefaultColor" format="color" />\
+        <attr name="TidalPatAdjustProgressHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecordStudioAdjustSeekBar">
+        <attr name="RecordStudioAdjustThumbSize" format="dimension" />
+        <attr name="RecordStudioAdjustThumbColor" format="color" />
+        <attr name="RecordStudioAdjustThumbDefaultColor" format="color" />
+        <attr name="RecordStudioAdjustProgressColor" format="color" />
+        <attr name="RecordStudioAdjustProgressSelectedColor" format="color" />
+        <attr name="TRecordStudioAdjustProgressDefaultColor" format="color" />\
+        <attr name="RecordStudioAdjustProgressHeight" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SpecialEffectsSelectorButton">
+        <attr name="SpecialEffectsTouchMode">
+            <enum name="TOUCH" value="0"/>
+            <enum name="SELECTOR" value="1"/>
+        </attr>
+        <attr name="SpecialEffectsSelectedRes" format="reference"/>
+        <attr name="SpecialEffectsDefaultRes" format="reference"/>
+        <attr name="SpecialEffectsDefaultViewWidth" format="dimension"/>
+        <attr name="SpecialEffectsDefaultViewHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxLengthEditText">
+        <attr name="MaxLengthEditTextMaxLength" format="integer"/>
+        <attr name="MaxLengthEditTextShowToast" format="boolean"/>
+        <attr name="MaxLengthIsCanInputLineFeed" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExtendedListView">
+        <attr name="scrollBarPanel" format="reference" />
+        <attr name="scrollBarPanelInAnimation" format="reference" />
+        <attr name="scrollBarPanelOutAnimation" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AccompanyFrequencyView">
+        <attr name="FrequencyBackgroundColor" format="color"/>
+        <attr name="FrequencyLineColor" format="color"/>
+        <attr name="FrequencyTextColor" format="color"/>
+        <attr name="FrequencyTextSize" format="dimension"/>
+        <attr name="FrequencyHeight" format="dimension"/>
+        <attr name="FrequencyCorners" format="dimension"/>
+        <attr name="FrequencyTextPadding" format="dimension"/>
+        <attr name="FrequencyLineMaxHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowRadius" format="float" />
+        <attr name="innerShadowDx" format="float" />
+        <attr name="innerShadowDy" format="float" />
+
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowRadius" format="float" />
+        <attr name="outerShadowDx" format="float" />
+        <attr name="outerShadowDy" format="float" />
+
+        <attr name="typeface" format="string" />
+
+        <attr name="foreground" format="reference|color" />
+
+        <attr name="magicStrokeWidth" format="float" />
+        <attr name="strokeMiter" format="float" />
+        <attr name="magicStrokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="HomeFloatLayout">
+        <attr name="mFloatImageViewWidth" format="dimension" />
+        <attr name="mFloatImageViewHeight" format="dimension" />
+        <attr name="mFloatChildPadding" format="dimension" />
+        <attr name="mFloatTextHeight" format="dimension" />
+    </declare-styleable>
+    <!--登陆界面验证码自定义view属性-->
+    <declare-styleable name="AuthCodeView">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextColorOther" format="color" />
+        <attr name="titleTextSize" format="dimension" />
+    </declare-styleable>
+    <!--任务中心布局属性-->
+    <declare-styleable name="TaskCenterItemBackup">　
+        <attr name="itemInfoText" format="string" />
+        　
+        <attr name="itemAwardText" format="string" />
+        　
+        <attr name="itemHandleTypeText" format="string" />
+        　
+        <attr name="itemIconSrc" format="reference" />　
+    </declare-styleable>
+
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify name. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+        <attr name="ptr_content_background" format="reference" />
+        <attr name="ptr_back_start_color" format="color" />
+        <attr name="ptr_back_end_color" format="color" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="backgroundColor" format="color"/>
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="btnColor" format="color"></attr>
+    </declare-styleable>
+    <!--任务中心签到条目用到的-->
+    <declare-styleable name="CircleItemAttrs">
+        <attr name="currentState" format="integer" />
+        <attr name="circleText" format="string" />
+        <attr name="circleTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+
+    <!-- 圈子头像 -->
+    <declare-styleable name="GroupView">
+        <attr name="type" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+        <attr name="padding" format="dimension" />
+        <attr name="cornor" format="dimension" />
+        <attr name="backgroundGP" format="reference|color" />
+
+    </declare-styleable>
+    <!--倒计时View-->
+    <declare-styleable name="TimeTextView"></declare-styleable>
+
+    <declare-styleable name="SideBar">
+        <attr name="unchoosed_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="choosed_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CS_NumberPicker">
+        <attr name="cs_normalTextColor" format="color" />
+        <attr name="cs_normalTextSize" format="dimension" />
+        <attr name="cs_selecredTextColor" format="color" />
+        <attr name="cs_selecredTextSize" format="dimension" />
+        <attr name="cs_unitHight" format="dimension" />
+        <attr name="cs_itemNumber" format="integer" />
+        <attr name="cs_lineColor" format="color" />
+        <attr name="cs_maskHight" format="dimension" />
+        <attr name="cs_noEmpty" format="boolean" />
+        <attr name="cs_isEnable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ClassifyView">
+        <attr name="classify_vertical_line" format="integer"></attr>
+        <attr name="classify_hotizontal_line" format="integer"></attr>
+        <attr name="classify_item_count" format="integer"></attr>
+        <attr name="classify_vertical_line_height" format="dimension"></attr>
+        <attr name="classify_vertical_line_width" format="dimension"></attr>
+        <attr name="classify_item_layout" format="reference"></attr>
+        <attr name="classify_footer_layout" format="reference"></attr>
+        <attr name="classify_item_margin" format="dimension"></attr>
+        <attr name="classify_line_color" format="color"></attr>
+        <attr name="classify_vertical_line_padding" format="dimension"></attr>
+        <attr name="classify_horizontal_line_padding" format="dimension"></attr>
+        <attr name="classify_isShowLine" format="boolean"></attr>
+        <attr name="classify_margin" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="rvp_triggerOffset" format="float" />
+        <attr name="rvp_flingFactor" format="float" />
+        <attr name="rvp_singlePageFling" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoopRecyclerLayout">
+        <attr name="loop_padding_top" format="dimension" />
+        <attr name="loop_padding_left" format="dimension" />
+        <attr name="loop_padding_right" format="dimension" />
+        <attr name="loop_indicator_margin_top" format="dimension" />
+        <attr name="loop_height" format="dimension" />
+        <attr name="loop_width" format="dimension" />
+        <attr name="loop_scale_type" format="integer" />
+    </declare-styleable>
+
+    <!-- tabLayout的参数 -->
+    <!-- indicator -->
+    <!-- 设置显示器颜色 -->
+    <attr name="tl_indicator_color" format="color" />
+    <!-- 设置显示器高度 -->
+    <attr name="tl_indicator_height" format="dimension" />
+    <!-- 设置显示器固定宽度 -->
+    <attr name="tl_indicator_width" format="dimension" />
+    <!-- 设置显示器margin,当indicator_width大于0,无效 -->
+    <attr name="tl_indicator_margin_left" format="dimension" />
+    <attr name="tl_indicator_margin_top" format="dimension" />
+    <attr name="tl_indicator_margin_right" format="dimension" />
+    <attr name="tl_indicator_margin_bottom" format="dimension" />
+    <!-- 设置显示器圆角弧度-->
+    <attr name="tl_indicator_corner_radius" format="dimension" />
+    <!-- 设置显示器上方还是下方,只对圆角矩形有用-->
+    <attr name="tl_indicator_gravity" format="enum">
+        <enum name="TOP" value="48" />
+        <enum name="BOTTOM" value="80" />
+    </attr>
+    <!-- 设置显示器为常规|三角形|背景色块|-->
+    <attr name="tl_indicator_style" format="enum">
+        <enum name="NORMAL" value="0" />
+        <enum name="TRIANGLE" value="1" />
+        <enum name="BLOCK" value="2" />
+    </attr>
+    <!-- 设置显示器长度与title一样长,只有在STYLE_NORMAL并且indicatorWidth小于零有效-->
+    <attr name="tl_indicator_width_equal_title" format="boolean" />
+    <!-- 设置显示器支持动画-->
+    <attr name="tl_indicator_anim_enable" format="boolean" />
+    <!-- 设置显示器动画时间-->
+    <attr name="tl_indicator_anim_duration" format="integer" />
+    <!-- 设置显示器支持动画回弹效果-->
+    <attr name="tl_indicator_bounce_enable" format="boolean" />
+
+    <!-- underline -->
+    <!-- 设置下划线颜色 -->
+    <attr name="tl_underline_color" format="color" />
+    <!-- 设置下划线高度 -->
+    <attr name="tl_underline_height" format="dimension" />
+    <!-- 设置下划线上方还是下方-->
+    <attr name="tl_underline_gravity" format="enum">
+        <enum name="TOP" value="48" />
+        <enum name="BOTTOM" value="80" />
+    </attr>
+
+    <!-- divider -->
+    <!-- 设置分割线颜色 -->
+    <attr name="tl_divider_color" format="color" />
+    <!-- 设置分割线宽度 -->
+    <attr name="tl_divider_width" format="dimension" />
+    <!-- 设置分割线的paddingTop和paddingBottom -->
+    <attr name="tl_divider_padding" format="dimension" />
+
+    <!-- tab -->
+    <!-- 设置tab的paddingLeft和paddingRight -->
+    <attr name="tl_tab_padding" format="dimension" />
+    <!-- 设置tab大小等分 -->
+    <attr name="tl_tab_space_equal" format="boolean" />
+    <!-- 设置tab固定大小 -->
+    <attr name="tl_tab_width" format="dimension" />
+
+    <!-- title -->
+    <!-- 设置字体大小 -->
+    <attr name="tl_textsize" format="dimension" />
+    <!-- 设置字体选中颜色 -->
+    <attr name="tl_textSelectColor" format="color" />
+    <!-- 设置字体未选中颜色 -->
+    <attr name="tl_textUnselectColor" format="color" />
+    <!-- 设置字体加粗 -->
+    <attr name="tl_textBold" format="enum">
+        <enum name="NONE" value="0" />
+        <enum name="SELECT" value="1" />
+        <enum name="BOTH" value="2" />
+    </attr>
+    <!-- 设置字体全大写 -->
+    <attr name="tl_textAllCaps" format="boolean" />
+
+    <declare-styleable name="SlidingTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_width_equal_title" />
+
+        <!-- underline -->
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectedsize" format="dimension" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+        <attr name="tl_textSelectBold" format="boolean" />
+        <attr name="tl_textClickRes" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CommonTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+
+        <!-- underline -->
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+        <!-- icon -->
+        <!-- 设置icon宽度 -->
+        <attr name="tl_iconWidth" format="dimension" />
+        <!-- 设置icon高度 -->
+        <attr name="tl_iconHeight" format="dimension" />
+        <!-- 设置icon是否可见 -->
+        <attr name="tl_iconVisible" format="boolean" />
+        <!-- 设置icon显示位置,对应Gravity中常量值 -->
+        <attr name="tl_iconGravity" format="enum">
+            <enum name="LEFT" value="3" />
+            <enum name="TOP" value="48" />
+            <enum name="RIGHT" value="5" />
+            <enum name="BOTTOM" value="80" />
+        </attr>
+        <!-- 设置icon与文字间距 -->
+        <attr name="tl_iconMargin" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SegmentTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+        <attr name="tl_bar_color" format="color" />
+        <attr name="tl_bar_stroke_color" format="color" />
+        <attr name="tl_bar_stroke_width" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="mv_backgroundColor" format="color" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_cornerRadius" format="dimension" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_strokeWidth" format="dimension" />
+        <!-- 圆角边框颜色-->
+        <attr name="mv_strokeColor" format="color" />
+        <!-- 圆角弧度是高度一半-->
+        <attr name="mv_isRadiusHalfHeight" format="boolean" />
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="mv_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
+    <!--活动信息填写-->
+    <declare-styleable name="LbsActionDetailWriteItem">
+        <attr name="title" format="string" />
+        <attr name="limit" format="string" />
+        <attr name="showLimit" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiBannerView">
+        <attr name="mbv_gravity" format="enum">
+            <enum name="outside" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagLayout">
+        <attr name="item_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarImageBehavior">
+        <attr name="finalYPosition" format="dimension"/>
+        <attr name="startXPosition" format="dimension"/>
+        <attr name="startToolbarPosition" format="dimension"/>
+        <attr name="startHeight" format="dimension"/>
+        <attr name="finalHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CollapsingAvatarToolbar">
+        <attr name="collapsedPadding" format="dimension" />
+        <attr name="expandedPadding" format="dimension" />
+
+        <attr name="collapsedImageSize" format="dimension" />
+        <attr name="expandedImageSize" format="dimension" />
+
+        <attr name="collapsedTextSize" format="dimension" />
+        <attr name="expandedTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MyExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="contentTextColor" format="color" />
+        <attr name="collapseExpandTextColor" format="color" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <attr name="textCollapse" format="string" />
+        <attr name="textExpand" format="string" />
+        <attr name="collapseExpandGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+        <attr name="drawableGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="animation_duration" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0"/>
+            <enum name="trimModeLength" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MusicExpandableTextView">
+        <attr name="etv_MaxLinesOnShrink" format="reference|integer" />
+        <attr name="etv_EllipsisHint" format="reference|string" /><!--default is ..-->
+        <attr name="etv_ToExpandHint" format="reference|string" /><!--"to expand" hint string, default is "Expand"-->
+        <attr name="etv_ToShrinkHint" format="reference|string" /><!--"to shrink" hint string, default is "Shrink"-->
+        <attr name="etv_GapToExpandHint" format="reference|string" /><!--gap between "toExpandHint" and "trimmed text"-->
+        <attr name="etv_GapToShrinkHint" format="reference|string" /><!--gap between "toShrinkHint" and "trimmed text"-->
+        <attr name="etv_EnableToggle" format="reference|boolean" /><!--if toggle the state when click ExpandTextView-->
+        <attr name="etv_ToExpandHintShow" format="reference|boolean" /><!--if show "toExpandHint"-->
+        <attr name="etv_ToShrinkHintShow" format="reference|boolean" /><!--if show "toShrinkHint"-->
+        <attr name="etv_ToExpandHintColor" format="reference|color" /><!--text color of "toExpandHint"-->
+        <attr name="etv_ToShrinkHintColor" format="reference|color" /><!--text color of "toShrinkHint"-->
+        <attr name="etv_ToExpandHintColorBgPressed" format="reference|color" /><!--background color if "toExpandHint" pressed-->
+        <attr name="etv_ToShrinkHintColorBgPressed" format="reference|color" /><!--background color if "toShrinkHint" pressed-->
+        <attr name="etv_InitState" format="enum"><!--init state, default is shrink-->
+            <enum name="shrink" value="0"/>
+            <enum name="expand" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PerformExpandableTextView">
+        <attr name="petv_MaxLinesOnShrink" format="reference|integer" />
+        <attr name="petv_EllipsisHint" format="reference|string" /><!--default is ..-->
+        <attr name="petv_ToExpandHint" format="reference|string" /><!--"to expand" hint string, default is "Expand"-->
+        <attr name="petv_ToShrinkHint" format="reference|string" /><!--"to shrink" hint string, default is "Shrink"-->
+        <attr name="petv_GapToExpandHint" format="reference|string" /><!--gap between "toExpandHint" and "trimmed text"-->
+        <attr name="petv_GapToShrinkHint" format="reference|string" /><!--gap between "toShrinkHint" and "trimmed text"-->
+        <attr name="petv_EnableToggle" format="reference|boolean" /><!--if toggle the state when click ExpandTextView-->
+        <attr name="petv_ToExpandHintShow" format="reference|boolean" /><!--if show "toExpandHint"-->
+        <attr name="petv_ToShrinkHintShow" format="reference|boolean" /><!--if show "toShrinkHint"-->
+        <attr name="petv_ToExpandHintColor" format="reference|color" /><!--text color of "toExpandHint"-->
+        <attr name="petv_ToShrinkHintColor" format="reference|color" /><!--text color of "toShrinkHint"-->
+        <attr name="petv_ToExpandHintColorBgPressed" format="reference|color" /><!--background color if "toExpandHint" pressed-->
+        <attr name="petv_ToShrinkHintColorBgPressed" format="reference|color" /><!--background color if "toShrinkHint" pressed-->
+        <attr name="petv_InitState" format="enum"><!--init state, default is shrink-->
+            <enum name="shrink" value="0"/>
+            <enum name="expand" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="EditTags">
+        <attr name="horizontal_spacing" format="dimension" />
+        <attr name="vertical_spacing" format="dimension" />
+        <attr name="tag_background" format="reference"/>
+        <attr name="tag_max_count" format="integer"/>
+        <attr name="tag_max_length" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ScrollPickerView">
+        <attr name="spv_min_text_size" format="dimension"/>
+        <attr name="spv_middle_text_size" format="dimension"/>
+        <attr name="spv_max_text_size" format="dimension"/>
+        <attr name="spv_start_color" format="color"/>
+        <attr name="spv_middle_color" format="color"/>
+        <attr name="spv_end_color" format="color"/>
+        <attr name="spv_center_item_background" format="color"/>
+        <attr name="spv_visible_item_count" format="integer"/>
+        <!-- 中间item的位置,默认为 mVisibleItemCount / 2-->
+        <attr name="spv_center_item_position" format="integer"/>
+        <!-- 是否循环滚动，默认为true，开启-->
+        <attr name="spv_is_circulation" format="boolean"/>
+        <!-- 不允许父组件拦截触摸事件，设置为true为不允许拦截，此时该设置才生效 -->
+        <attr name="spv_disallow_intercept_touch" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="StickyNavLayout">
+        <attr name="snl_space_top" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="DefaultNoDataView">
+        <attr name="defaultText" format="string|reference"/>
+        <attr name="defaultTextSize" format="dimension|reference"/>
+        <attr name="defaultTextColor" format="color|reference"/>
+        <attr name="defaultImage" format="reference" />
+        <attr name="defaultImageWidth" format="dimension|reference"/>
+        <attr name="defaultImageHeight" format="dimension|reference"/>
+        <attr name="verticalSpace" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_text_prefix" format="string"/>
+        <attr name="cpv_text_suffix" format="string"/>
+        <attr name="cpv_progress" format="integer" />
+        <attr name="cpv_circle_color" format="color" />
+        <attr name="cpv_background_circle_color" format="color" />
+        <attr name="cpv_text_color" format="color"/>
+        <attr name="cpv_text_size" format="integer" />
+        <attr name="cpv_circle_width" format="dimension" />
+        <attr name="cpv_background_circle_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="centerhintedittextstyle">
+        <attr name="centerHintText" format="string"/>
+        <attr name="centerHintColor" format="color"/>
+        <attr name="textHintSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClearableEditText">
+        <attr name="cet_clearIcon" format="reference"/>
+        <attr name="cet_iconWidth" format="dimension"/>
+        <attr name="cet_iconHeight" format="dimension"/>
+        <attr name="cet_hintText" format="reference|string"/>
+        <attr name="cet_hintTextColor" format="reference|color"/>
+        <attr name="cet_textSize" format="dimension"/>
+        <attr name="cet_textColor" format="reference|color"/>
+        <attr name="cet_maxLength" format="integer"/>
+        <attr name="cet_singleLine" format="boolean"/>
+        <attr name="cet_showMaxInputTips" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="HeyHouTitleBar">
+        <attr name="leftIcon" format="reference"/>
+        <attr name="middleText" format="reference|string" />
+        <attr name="middleIcon" format="reference" />
+        <attr name="enableMiddleIcon" format="boolean" />
+        <attr name="middleTextColor" format="reference|color" />
+        <attr name="defaultBackgroundColor" format="reference|color" />
+        <attr name="middleTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TidalPlayDetailView">
+        <attr name="retrieveDataFromParentIntent" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScaleableImageView">
+        <attr name="scale" format="float"/>
+        <attr name="baseOnHeight" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="user_individual_center_layout">
+        <attr name="shrink_height" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="press_state_image">
+        <attr name="image_src" format="reference"/>
+        <attr name="selected_image_src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundLinearLayout">
+        <attr name="cornerX" format="dimension" />
+        <attr name="cornerY" format="dimension" />
+    </declare-styleable>
+
+</resources>

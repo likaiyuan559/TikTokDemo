@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:id="@+id/rgp_choose_method">
+    <RadioButton
+        android:id="@+id/tv_modify_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_common_pink_submit"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/edit_info_modify_head"
+        android:textColor="@color/pure_white"
+        android:textSize="15sp"
+        android:button="@null"/>
+
+    <RadioButton
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_common_rec_checked"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/edit_info_save"
+        android:textColor="@color/theme_pink"
+        android:textSize="15sp"
+        android:button="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/shape_common_rec_checked"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/theme_pink"
+        android:textSize="15sp"
+        android:button="@null"/>
+
+</RadioGroup>

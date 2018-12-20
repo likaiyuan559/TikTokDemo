@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/tidal_pat_upload_se_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="-57dp">
+            <TextView
+                android:id="@+id/tidal_pat_upload_se_cancel_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:paddingRight="15dp"
+                android:textSize="15sp"
+                android:text="@string/cancel"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tidal_pat_upload_se_save_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:paddingRight="15dp"
+                android:textSize="15sp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tidal_pat_record_video_upload_pv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal">
+            <!--chaopai_play-->
+            <com.tiktokdemo.lky.tiktokdemo.record.weight.SpecialEffectsPlayView
+                android:id="@+id/tidal_pat_record_video_upload_pv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"></com.tiktokdemo.lky.tiktokdemo.record.weight.SpecialEffectsPlayView>
+            <ImageView
+                android:id="@+id/tidal_pat_record_video_upload_pv_btn"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/chaopai_play"
+                android:scaleType="centerInside"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tidal_pat_upload_se_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="-200dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/tidal_pat_upload_se_seek_layout"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tidal_pat_upload_se_time_current_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="00:00"/>
+                <com.tiktokdemo.lky.tiktokdemo.record.weight.SpecialEffectsSeekBar
+                    android:id="@+id/tidal_pat_upload_se_seek_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tidal_pat_upload_se_time_end_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="00:00"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+                <TextView
+                    android:id="@+id/tidal_pat_upload_se_hint_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/few_60_transparency_white"
+                    android:text="@string/tidal_pat_upload_position_selected_hint"/>
+                <TextView
+                    android:id="@+id/tidal_pat_upload_se_remove_txt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_tidal_pat_record_gray"
+                    android:textSize="13sp"
+                    android:textColor="@color/few_60_transparency_white"
+                    android:text="@string/tidal_pat_upload_clear_se_remove"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tidal_pat_upload_se_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:background="#FF1B1D2A">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tidal_pat_upload_se_bottom_filter_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:text="@string/tidal_pat_upload_se_filter"/>
+                    <View
+                        android:id="@+id/tidal_pat_upload_se_bottom_filter_view"
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:background="@color/color_ffd217"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/few_30_transparency_white"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tidal_pat_upload_se_bottom_time_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/few_60_transparency_white"
+                        android:text="@string/tidal_pat_upload_se_time"/>
+                    <View
+                        android:id="@+id/tidal_pat_upload_se_bottom_time_view"
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:background="@color/color_ffd217"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tidal_pat_record_video_upload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tidal_pat_record_video_back_img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/chaopai_luzhi_fanhui" />
+
+
+        <ImageView
+            android:id="@+id/tidal_pat_upload_video_music_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tidal_pat_upload_video_music_img"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tidal_pat_record_video_cut_music_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/chaopai_luzhi_jianyinyue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:text="@string/tidal_pat_cut_music"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/tidal_pat_upload_video_cover_select_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/chaopai_luzhi_xuanfengmian"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:text="@string/tidal_pat_cover_selected"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/tidal_pat_upload_video_volume_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/chaopai_yinliang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:text="@string/tidal_pat_volume"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/tidal_pat_upload_video_special_effects_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/chaopai_teixao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:text="@string/tidal_pat_special_effects"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_gradual_black_bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="60dp">
+
+                        <Button
+                            android:id="@+id/tidal_pat_record_voice_complete_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="7.5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_tidal_pat_upload_send_btn"
+                            android:gravity="center"
+                            android:text="@string/personal_show_upload_video"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tidal_pat_record_cut_audio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="@color/few_transparency"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:text="@string/tidal_pat_cut_audio_hint"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/tidal_pat_record_cut_audio_confirm_img"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/chaopai_luzhi_xuanzhong" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tidal_pat_record_cut_audio_scale_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.tiktokdemo.lky.tiktokdemo.record.weight.ScaleRoundRectView
+                android:id="@+id/tidal_pat_record_cut_audio_scale_view"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginRight="39dp" />
+
+            <TextView
+                android:id="@+id/tidal_pat_record_cut_audio_current_time_txt"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tidal_pat_record_cut_audio_max_time_txt"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tidal_pat_record_volume_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/tidal_pat_record_volume_wrap_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:background="@color/few_b4_transparency"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/tidal_pat_record_original_sound"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.tiktokdemo.lky.tiktokdemo.record.weight.TidalPatAdjustSeekBar
+                        android:id="@+id/tidal_pat_record_volume_original_sound_seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/tidal_pat_record_background_music"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <com.tiktokdemo.lky.tiktokdemo.record.weight.TidalPatAdjustSeekBar
+                        android:id="@+id/tidal_pat_record_volume_background_music_seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/personal_show_record_video_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_round_white"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/personal_show_loading_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@mipmap/run" />
+
+            <TextView
+                android:id="@+id/tidal_pat_record_video_loading_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/tidal_pat_record_combining"
+                android:textColor="@color/color_bb"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="8dp">
+    <com.tiktokdemo.lky.tiktokdemo.record.weight.SpecialEffectsSelectorButton
+        xmlns:se_btn="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tidal_pat_special_effects_item_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        se_btn:SpecialEffectsDefaultViewWidth="50dp"
+        se_btn:SpecialEffectsDefaultViewHeight="50dp"
+        se_btn:SpecialEffectsTouchMode="TOUCH"/>
+    <TextView
+        android:id="@+id/tidal_pat_special_effects_item_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/few_80_transparency_white"
+        android:text="@string/tidal_pat_upload_se_soul_out"/>
+</LinearLayout>

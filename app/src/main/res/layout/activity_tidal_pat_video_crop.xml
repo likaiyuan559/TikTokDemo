@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/theme_back">
+
+    <com.tiktokdemo.lky.tiktokdemo.record.weight.SpecialEffectsPlayView
+        android:id="@+id/tidal_pat_crop_video_pv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"></com.tiktokdemo.lky.tiktokdemo.record.weight.SpecialEffectsPlayView>
+
+    <ImageView
+        android:id="@+id/tidal_pat_crop_video_back_img"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/chaopai_luzhi_fanhui"/>
+
+    <ImageView
+        android:id="@+id/tidal_pat_crop_video_save_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tidal_pat_record_video_break_progress"
+        android:src="@mipmap/chaopai_luzhi_wanchenmoren"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <com.tiktokdemo.lky.tiktokdemo.record.weight.NewSpeedLevelControllerView
+            android:id="@+id/tidal_pat_video_crop_speed_controller_view"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/tidal_pat_video_crop_selected_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/tidal_pat_crop_video_selected_time"/>
+
+        <com.tiktokdemo.lky.tiktokdemo.record.weight.VideoCropViewBar
+            android:id="@+id/tidal_pat_video_crop_crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:background="@color/few_66_transparency"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_personal_show_video_speed_level">
+        <TextView
+            android:id="@+id/tidal_pat_video_crop_time_selector_15_txt"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/few_transparency"
+            android:text="@string/tidal_pat_record_time_15"
+            android:background="@drawable/bg_personal_show_video_speed_level_left"/>
+        <TextView
+            android:id="@+id/tidal_pat_video_crop_time_selector_120_txt"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/tidal_pat_record_time_120"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/personal_show_record_video_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_few_transparency_round"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/personal_show_loading_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@mipmap/run" />-->
+
+            <com.tiktokdemo.lky.tiktokdemo.record.weight.CircleProgressView
+                xmlns:circle="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/personal_show_loading_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                circle:cpv_background_circle_color="@color/transparent_30_percent"
+                circle:cpv_background_circle_width="2dp"
+                circle:cpv_circle_color="@color/color_ffd217"
+                circle:cpv_circle_width="2dp"
+                circle:cpv_text_color="@color/white"
+                circle:cpv_text_size="9"
+                circle:cpv_text_suffix="%"/>
+
+            <TextView
+                android:id="@+id/tidal_pat_record_video_loading_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_b4"
+                android:text="@string/tidal_pat_crop_video_make_loading"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
